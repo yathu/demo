@@ -72,7 +72,7 @@
                     </a>
                 </div>
             </div>
-            <div class="addon-footer">
+            <div id="instant" class="addon-footer" data-toggle="modal" data-target="#moreModal">
                 <img src="assets/img/ques.svg" alt="">
                 MORE DETAILS
             </div>
@@ -99,11 +99,11 @@
                 <div>
                     <a href="#" class="btn active-add-btn">
                         <span>ADDED</span>
-                        <input checked type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                        <input checked type="checkbox" id="switch"/><label for="switch">Toggle</label>
                     </a>
                 </div>
             </div>
-            <div class="addon-footer">
+            <div id="verified" class="addon-footer" data-toggle="modal" data-target="#moreModal">
                 <img src="assets/img/ques.svg" alt="">
                 MORE DETAILS
             </div>
@@ -134,7 +134,7 @@
                     </a>
                 </div>
             </div>
-            <div class="addon-footer">
+            <div id="social" class="addon-footer" data-toggle="modal" data-target="#moreModal">
                 <img src="assets/img/ques.svg" alt="">
                 MORE DETAILS
             </div>
@@ -188,7 +188,7 @@
                     </a>
                 </div>
             </div>
-            <div class="addon-footer">
+            <div id="virtual" class="addon-footer" data-toggle="modal" data-target="#moreModal">
                 <img src="assets/img/ques.svg" alt="">
                 MORE DETAILS
             </div>
@@ -222,7 +222,7 @@
                     50% OFF. Limited time offer
                 </div>
             </div>
-            <div class="addon-footer">
+            <div id="double" class="addon-footer" data-toggle="modal" data-target="#moreModal">
                 <img src="assets/img/ques.svg" alt="">
                 MORE DETAILS
             </div>
@@ -234,6 +234,194 @@
         <button class="btn btn-outline-success btn-block back-btn">BACK</button>
         <button class="btn btn-success btn-block">PROCEED TO CHECKOUT</button>
     </div>
+</div>
+
+<div class="modal fade" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+                        <title>Path</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+                            <rect id="path-1" x="975" y="306" width="340" height="365" rx="5"></rect>
+                            <filter x="-4.7%" y="-3.8%" width="109.4%" height="108.8%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                <feColorMatrix values="0 0 0 0 0.949019608   0 0 0 0 0.949019608   0 0 0 0 0.949019608  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <rect id="path-3" x="0" y="0" width="700" height="400" rx="15"></rect>
+                            <filter x="-8.7%" y="-14.8%" width="117.4%" height="130.5%" filterUnits="objectBoundingBox" id="filter-4">
+                                <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.6 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="lpw-addons-1.0(more-details-popup)" transform="translate(-1274.000000, -326.000000)">
+                                <g id="Rectangle">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                    <rect stroke="#72BF90" stroke-width="2" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="976" y="307" width="338" height="363" rx="5"></rect>
+                                </g>
+                                <rect id="Rectangle" fill-opacity="0.9" fill="#202330" x="-1" y="0" width="1920" height="1582"></rect>
+                                <g id="Group-3" transform="translate(609.000000, 306.000000)">
+                                    <g id="Rectangle">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                    </g>
+                                    <g id="close(2)" transform="translate(665.000000, 20.000000)" fill="#000000" fill-rule="nonzero">
+                                        <path d="M0.461495327,14.5385047 C1.04542034,15.1222534 1.99196284,15.1222534 2.57588785,14.5385047 L7.5,9.61439252 L12.4241121,14.5385047 C13.0108469,15.1051921 13.9434913,15.0970877 14.5202895,14.5202895 C15.0970877,13.9434913 15.1051921,13.0108469 14.5385047,12.4241121 L9.61439252,7.5 L14.5385047,2.57588785 C14.9272248,2.20044939 15.0831216,1.64448166 14.9462761,1.12167129 C14.8094306,0.598860926 14.4011391,0.190569397 13.8783287,0.053723878 C13.3555183,-0.0831216407 12.7995506,0.0727752008 12.4241121,0.461495327 L7.5,5.38560748 L2.57588785,0.461495327 C2.20044939,0.0727752008 1.64448166,-0.0831216407 1.12167129,0.053723878 C0.598860926,0.190569397 0.190569397,0.598860926 0.053723878,1.12167129 C-0.0831216407,1.64448166 0.0727752008,2.20044939 0.461495327,2.57588785 L5.38560748,7.5 L0.461495327,12.4241121 C-0.122253366,13.0080372 -0.122253366,13.9545797 0.461495327,14.5385047 L0.461495327,14.5385047 Z" id="Path"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="content instant">
+                    <div class="title-box">
+                        <img src="assets/img/instant.svg" alt="">
+                        <h1>
+                            Instant Boost
+                        </h1>
+                    </div>
+                    <p>Show your Ad to 85K+ user base and get instant leads. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="price-row">
+                        <div class="col old-price">
+                            LKR 800
+                        </div>
+                        <div class="col new-price">
+                            LKR 600
+                        </div>
+                        <div class="btn-col text-center">
+                            <a href="#" class="btn add-btn">
+                                <img src="assets/img/add-button.svg" alt="">
+                                ADD NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content verified">
+                    <div class="title-box">
+                        <img src="assets/img/verified.svg" alt="">
+                        <h1>
+                            Verified Property
+                        </h1>
+                    </div>
+                    <p>Show your Ad to 85K+ user base and get instant leads. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="price-row">
+                        <div class="col old-price">
+                            LKR 800
+                        </div>
+                        <div class="col new-price">
+                            LKR 600
+                        </div>
+                        <div class="btn-col text-center">
+                            <a href="#" class="btn add-btn">
+                                <img src="assets/img/add-button.svg" alt="">
+                                ADD NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content social">
+                    <div class="title-box">
+                        <img src="assets/img/social-media.svg" alt="">
+                        <h1>
+                            Social Media Promo
+                        </h1>
+                    </div>
+                    <p>Show your Ad to 85K+ user base and get instant leads. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="price-row">
+                        <div class="col old-price">
+                            LKR 800
+                        </div>
+                        <div class="col new-price">
+                            LKR 600
+                        </div>
+                        <div class="btn-col text-center">
+                            <a href="#" class="btn add-btn">
+                                <img src="assets/img/add-button.svg" alt="">
+                                ADD NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content virtual">
+                    <div class="title-box">
+                        <img src="assets/img/birtual.svg" alt="">
+                        <h1>
+                            Virtual Experience
+                        </h1>
+                    </div>
+                    <p>Show your Ad to 85K+ user base and get instant leads. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="price-row">
+                        <div class="col old-price">
+                            LKR 800
+                        </div>
+                        <div class="col new-price">
+                            LKR 600
+                        </div>
+                        <div class="btn-col text-center">
+                            <a href="#" class="btn add-btn">
+                                <img src="assets/img/add-button.svg" alt="">
+                                ADD NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content double">
+                    <div class="title-box">
+                        <img src="assets/img/double.svg" alt="">
+                        <h1>
+                            Double Views & Leads
+                        </h1>
+                    </div>
+                    <p>Show your Ad to 85K+ user base and get instant leads. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="price-row">
+                        <div class="col old-price">
+                            LKR 800
+                        </div>
+                        <div class="col new-price">
+                            LKR 600
+                        </div>
+                        <div class="btn-col text-center">
+                            <a href="#" class="btn add-btn">
+                                <img src="assets/img/add-button.svg" alt="">
+                                ADD NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
 </div>
 
 
