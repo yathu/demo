@@ -79,11 +79,16 @@
                 </div>
                 <div>
                     <div class="button-switch">
-                        <input type="checkbox" id="switch-orange" class="switch" />
+                        <input type="checkbox" id="switch-orange" data-price="600" data-btn="instant" class="switch"/>
                         <label for="switch-orange" class="lbl-off">ADD NOW</label>
                         <label for="switch-orange" class="lbl-on">ADDED</label>
                     </div>
                 </div>
+
+                <div class="offer">
+                    50% OFF. Limited time offer
+                </div>
+
             </div>
             <div id="instant" class="addon-footer" data-toggle="modal" data-target="#moreModal">
                 <img src="assets/img/ques.svg" alt="">
@@ -112,7 +117,8 @@
                 <div>
                     <div>
                         <div class="button-switch">
-                            <input type="checkbox" id="switch-orange1" class="switch" />
+                            <input type="checkbox" id="switch-orange1" data-price="960" data-btn="verified"
+                                   class="switch"/>
                             <label for="switch-orange1" class="lbl-off">ADD NOW</label>
                             <label for="switch-orange1" class="lbl-on">ADDED</label>
                         </div>
@@ -146,7 +152,8 @@
                 <div>
                     <div>
                         <div class="button-switch">
-                            <input type="checkbox" id="switch-orange2" class="switch" />
+                            <input type="checkbox" id="switch-orange2" data-price="1150" data-btn="social"
+                                   class="switch"/>
                             <label for="switch-orange2" class="lbl-off">ADD NOW</label>
                             <label for="switch-orange2" class="lbl-on">ADDED</label>
                         </div>
@@ -157,29 +164,6 @@
                 <img src="assets/img/ques.svg" alt="">
                 MORE DETAILS
             </div>
-        </div>
-
-        <div class="addon-item bill-summary">
-
-            <ul>
-                <li>
-                    <span>Bill Summery</span>
-                    <strong>Quarterly (3 months)</strong>
-                </li>
-                <li>
-                    <span>Sub Total</span>
-                    <strong>LKR 16,720 + 960</strong>
-                </li>
-                <li class="price">
-                    <span>Total Savings</span>
-                    <strong>LKR 1860</strong>
-                </li>
-                <li class="total">
-                    <span>Net Total</span>
-                    <strong>LKR 15,820</strong>
-                </li>
-            </ul>
-
         </div>
 
         <div id="contentVirtual" class="addon-item">
@@ -203,7 +187,8 @@
                 <div>
                     <div>
                         <div class="button-switch">
-                            <input type="checkbox" id="switch-orange3" class="switch" />
+                            <input type="checkbox" id="switch-orange3" data-price="1600" data-btn="virtual"
+                                   class="switch"/>
                             <label for="switch-orange3" class="lbl-off">ADD NOW</label>
                             <label for="switch-orange3" class="lbl-on">ADDED</label>
                         </div>
@@ -227,25 +212,27 @@
             </p>
             <div class="button-box">
                 <div>
-                    <span class="old">
-                        LKR 2600
-                    </span>
+                    <!--                    <span class="old">-->
+                    <!--                        LKR 2600-->
+                    <!--                    </span>-->
                     <span class="new">
-                        LKR 2200
+<!--                        LKR 2200-->
+                        Free
                     </span>
                 </div>
                 <div>
                     <div>
                         <div class="button-switch">
-                            <input type="checkbox" id="switch-orange4" class="switch" />
+                            <input checked type="checkbox" id="switch-orange4" data-price="0" data-btn="double"
+                                   class="switch"/>
                             <label for="switch-orange4" class="lbl-off">ADD NOW</label>
                             <label for="switch-orange4" class="lbl-on">ADDED</label>
                         </div>
                     </div>
                 </div>
-                <div class="offer">
-                    50% OFF. Limited time offer
-                </div>
+                <!--                <div class="offer">-->
+                <!--                    50% OFF. Limited time offer-->
+                <!--                </div>-->
             </div>
             <div id="double" class="addon-footer" data-toggle="modal" data-target="#moreModal">
                 <img src="assets/img/ques.svg" alt="">
@@ -253,12 +240,91 @@
             </div>
         </div>
 
+        <div class="addon-item bill-summary">
+
+            <img class="img-responsive"
+                 src="assets/img/summary.png" alt="summary">
+
+            <ul>
+                <!--                <li>-->
+                <!--                    <span>Bill Summery</span>-->
+                <!--                    <strong>Quarterly (3 months)</strong>-->
+                <!--                </li>-->
+                <li>
+                    <span>Sub Total</span>
+                    <strong>LKR <span class="subTotalValue"></span></strong>
+                </li>
+                <!--                <li class="price">-->
+                <!--                    <span>Total Savings</span>-->
+                <!--                    <strong>LKR 1860</strong>-->
+                <!--                </li>-->
+                <!--                <li class="total">-->
+                <!--                    <span>Net Total</span>-->
+                <!--                    <strong>LKR 15,820</strong>-->
+                <!--                </li>-->
+            </ul>
+
+        </div>
+
+
     </div>
 
     <div class="button-container">
         <button class="btn btn-outline-success btn-block back-btn">BACK</button>
         <button class="btn btn-success btn-block">PROCEED TO CHECKOUT</button>
     </div>
+</div>
+
+<div class="container help-container">
+    <div class="help-box">
+        <div class="content">
+            <p>
+                <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+                    <title>question-2</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs>
+                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+                            <stop stop-color="#FFDA44" offset="0%"></stop>
+                            <stop stop-color="#FFAF46" offset="100%"></stop>
+                        </linearGradient>
+                    </defs>
+                    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="lpw-addons-1.1" transform="translate(-465.000000, -1227.000000)">
+                            <rect id="Rectangle" fill="#FFFAE7" x="235" y="1193" width="1450" height="90" rx="5"></rect>
+                            <g id="question-2" transform="translate(465.000000, 1227.000000)"
+                               fill="url(#linearGradient-1)" fill-rule="nonzero">
+                                <path d="M11,0 C4.93423047,0 0,4.93423047 0,11 C0,17.0657695 4.93423047,22 11,22 C17.0657695,22 22,17.0657695 22,11 C22,4.93423047 17.0657695,0 11,0 Z M10.5416523,18.3333477 C9.78342578,18.3333477 9.16665234,17.7165742 9.16665234,16.9583477 C9.16665234,16.2001211 9.78342578,15.5833477 10.5416523,15.5833477 C11.2998789,15.5833477 11.9166523,16.2001211 11.9166523,16.9583477 C11.9166523,17.7165742 11.2998789,18.3333477 10.5416523,18.3333477 Z M11.9166523,12.7420391 L11.9166523,14.2083477 C11.9166523,14.4616914 11.7116484,14.6666953 11.4583047,14.6666953 L9.625,14.6666953 C9.37165625,14.6666953 9.16665234,14.4616914 9.16665234,14.2083477 L9.16665234,11.9166953 C9.16665234,10.9060273 9.98933203,10.0833477 11,10.0833477 C12.010668,10.0833477 12.8333477,9.26066797 12.8333477,8.25 C12.8333477,7.23933203 12.010668,6.41665234 11,6.41665234 C9.98933203,6.41665234 9.16665234,7.23933203 9.16665234,8.25 L9.16665234,8.70834766 C9.16665234,8.96169141 8.96164844,9.16669531 8.70830469,9.16669531 L6.875,9.16669531 C6.62165625,9.16669531 6.41665234,8.96169141 6.41665234,8.70834766 L6.41665234,8.25 C6.41665234,5.72287891 8.47287891,3.66665234 11,3.66665234 C13.5271211,3.66665234 15.5833477,5.72292187 15.5833477,8.25 C15.5833477,10.4494844 14.0337656,12.3132539 11.9166523,12.7420391 Z"
+                                      id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+
+                <b>
+                    Need help?
+                </b>
+                Contact our industry experts to choose the right plan and add-ons suitable for you.
+            </p>
+        </div>
+        <div>
+            <button class="btn btn-outline-success btn-block back-btn">CONTACT</button>
+        </div>
+    </div>
+</div>
+
+<div class="container bottom-back">
+    <div class="mobile-nave">
+        <a href="#">
+            <img src="assets/img/back.svg" alt="">
+            Back</a>
+    </div>
+</div>
+
+<div class="container mobile-bill-summary">
+    <span>Sub Total</span>
+    <strong>LKR <span class="subTotalValue"></span></strong>
 </div>
 
 <div class="modal fade" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -344,7 +410,8 @@
                         </div>
                         <div class="btn-col text-center">
                             <div class="button-switch">
-                                <input type="checkbox" id="switch-orange5" class="switch" />
+                                <input type="checkbox" id="switch-orange5" data-price="600" data-btn="instant"
+                                       class="switch"/>
                                 <label for="switch-orange5" class="lbl-off">ADD NOW</label>
                                 <label for="switch-orange5" class="lbl-on">ADDED</label>
                             </div>
@@ -372,7 +439,8 @@
                         </div>
                         <div class="btn-col text-center">
                             <div class="button-switch">
-                                <input type="checkbox" id="switch-orange6" class="switch" />
+                                <input type="checkbox" id="switch-orange6" data-price="960" data-btn="verified"
+                                       class="switch"/>
                                 <label for="switch-orange6" class="lbl-off">ADD NOW</label>
                                 <label for="switch-orange6" class="lbl-on">ADDED</label>
                             </div>
@@ -400,7 +468,8 @@
                         </div>
                         <div class="btn-col text-center">
                             <div class="button-switch">
-                                <input type="checkbox" id="switch-orange7" class="switch" />
+                                <input type="checkbox" id="switch-orange7" data-price="1150" data-btn="social"
+                                       class="switch"/>
                                 <label for="switch-orange7" class="lbl-off">ADD NOW</label>
                                 <label for="switch-orange7" class="lbl-on">ADDED</label>
                             </div>
@@ -428,7 +497,8 @@
                         </div>
                         <div class="btn-col text-center">
                             <div class="button-switch">
-                                <input type="checkbox" id="switch-orange8" class="switch" />
+                                <input type="checkbox" id="switch-orange8" data-price="1600" data-btn="virtual"
+                                       class="switch"/>
                                 <label for="switch-orange8" class="lbl-off">ADD NOW</label>
                                 <label for="switch-orange8" class="lbl-on">ADDED</label>
                             </div>
@@ -449,14 +519,16 @@
                     </p>
                     <div class="price-row">
                         <div class="col old-price">
-                            LKR 2600
+                            <!--                            LKR 2600-->
                         </div>
                         <div class="col new-price">
-                            LKR 2200
+                            <!--                            LKR 2200-->
+                            Free
                         </div>
                         <div class="btn-col text-center">
                             <div class="button-switch">
-                                <input type="checkbox" id="switch-orange9" class="switch" />
+                                <input checked type="checkbox" id="switch-orange9" data-price="0" data-btn="double"
+                                       class="switch"/>
                                 <label for="switch-orange9" class="lbl-off">ADD NOW</label>
                                 <label for="switch-orange9" class="lbl-on">ADDED</label>
                             </div>
