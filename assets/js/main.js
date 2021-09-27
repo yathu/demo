@@ -52,9 +52,18 @@ $(document).ready(function () {
 
     });
 
+
+
+    $('.addon-menu-swiper div').find('a').first().addClass('active_slider');
+
+    $('.addon-menu-swiper div a').on("click",function(){
+        $('.addon-menu-swiper a').removeClass('active_slider');
+        $(this).addClass('active_slider');
+    });
+
     var menuSwiper = new Swiper(".addon-menu-swiper", {
         slidesPerView: "auto",
-        loop: true,
+        loop: false,
         // slidesPerView: 1,
         spaceBetween: 15,
         // allowTouchMove:false,
@@ -109,7 +118,7 @@ $(document).ready(function () {
                 return this;
         });
 
-        console.log("fromTop", fromTop);
+        // console.log("fromTop", fromTop);
 
         if (fromTop > 350) {
 
@@ -118,28 +127,20 @@ $(document).ready(function () {
         cur = cur[cur.length - 1];
         var id = cur && cur.length ? cur[0].id : "";
 
-        if (id != null && id != undefined && id != '' && lastId !== id) {
-            console.log("id==>", id);
-
-            lastId = id;
-            // menuItems.removeClass("active");
-
-            var menuid = '#' + id;
-
-            // $('.mobile-plans a[href="'+menuid+'"]').addClass("active");
-
-
-            if ($('a[href="' + menuid + '"]').hasClass('swiper-slide')) {
-                var activeIndex = menuSwiper.realIndex;
-                // var activeIndex = $('.swiper-slide-active').data('swiper-slide-index');
-
-                var index = $('a[href="' + menuid + '"]').index();
-                console.log(index, activeIndex);
-
-                if (activeIndex !== index) menuSwiper.slideTo(index, 1000, false);
-            }
-
-        }
+        // if (id != null && id != undefined && id != '' && lastId !== id) {
+        //     console.log("id==>", id);
+        //
+        //     lastId = id;
+        //     var menuid = '#' + id;
+        //
+        //     if ($('a[href="' + menuid + '"]').hasClass('swiper-slide')) {
+        //         var activeIndex = menuSwiper.realIndex;
+        //         var index = $('a[href="' + menuid + '"]').index();
+        //         console.log(index, activeIndex);
+        //         if (activeIndex !== index) menuSwiper.slideTo(index, 1000, false);
+        //     }
+        //
+        // }
 
         //this is for stick menu if scrool top >= planoffset add stick class
         // var plansOffset = $('.mobile-plans').offset().top + 25;
